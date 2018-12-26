@@ -1,5 +1,5 @@
 # 概述
-Vue2.x学习笔记
+VueRouter学习笔记
 # 参考
 [Vue](https://cn.vuejs.org/)
 [vueRouter](https://router.vuejs.org/zh/installation.html)
