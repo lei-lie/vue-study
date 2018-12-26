@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dynamic Router Study</title>
+  <title> Router View Study</title>
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
   <link rel="stylesheet" href="../css/page.css">
 </head>
@@ -13,27 +13,17 @@
 <body>
   <div id="app">
     <header class="demo-header">
-      <ul class="demo-nav">
-        <li>
-          <router-link to="/home">HOME</router-link>
-        </li>
-        <li>
-          <router-link to="/personal">PERSONAL</router-link>
-        </li>
-        <li>
-          <router-link to="/collection">COLLECTION</router-link>
-        </li>
-      </ul>
+
     </header>
     <section class="demo-main">
-      <router-link to="/list">list</router-link>
-      <router-link to="/list/info">info</router-link>
-      <router-link to="/list/add">add</router-link>
-      <!-- 路由出口：路由匹配到的组件将渲染在这里 -->
-      <router-view></router-view>
+      <router-view ></router-view>
+      <router-view  name="a"></router-view>
+      <router-view  name="b"></router-view>
+
     </section>
     <footer class="demo-footer"></footer>
-
+<!-- 路由出口：路由匹配到的组件将渲染在这里 -->
+<router-view></router-view>
   </div>
 </body>
 <script src="../plugins/vue/vue.js"></script>
@@ -41,8 +31,6 @@
 <!-- 引入组件库 -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="../router/index.js"></script>
-<script src="../js/dynamicrouter.js">
-
-</script>
+<script src="../js/routerView.js"></script>
 
 </html>

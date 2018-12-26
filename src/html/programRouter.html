@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dynamic Router Study</title>
+  <title>Nest Router Study</title>
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
   <link rel="stylesheet" href="../css/page.css">
 </head>
@@ -26,9 +26,9 @@
       </ul>
     </header>
     <section class="demo-main">
-      <router-link to="/list">list</router-link>
-      <router-link to="/list/info">info</router-link>
-      <router-link to="/list/add">add</router-link>
+
+      <el-button type="danger" @click="toInfo">ToInfo</el-button>
+      <router-link to="/program" >program</router-link>
       <!-- 路由出口：路由匹配到的组件将渲染在这里 -->
       <router-view></router-view>
     </section>
@@ -41,8 +41,6 @@
 <!-- 引入组件库 -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="../router/index.js"></script>
-<script src="../js/dynamicrouter.js">
-
-</script>
+<script src="../js/programmRouter.js"></script>
 
 </html>
