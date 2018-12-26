@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vue Router Study</title>
-  <!-- 引入样式 -->
+  <title>Nest Router Study</title>
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
   <link rel="stylesheet" href="../css/page.css">
 </head>
@@ -19,18 +18,20 @@
       </ul>
     </header>
     <section class="demo-main">
-     
-       <!-- 路由出口：路由匹配到的组件将渲染在这里 -->
+      <router-link to="/list">list</router-link>
+      <router-link to="/list/info">info</router-link>
+      <router-link to="/list/add">add</router-link>
+      <!-- 路由出口：路由匹配到的组件将渲染在这里 -->
     <router-view></router-view>
     </section>
     <footer class="demo-footer"></footer>
-   
+    
   </div>
 </body>
 <script src="../plugins/vue/vue.js"></script>
+<script src="../plugins/vue/vue-router.js"></script>
 <!-- 引入组件库 -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script src="../plugins/vue/vue-router.js"></script>
 <script src="../router/index.js"></script>
-<script src="../js/routerLink.js"></script>
+<script src="../js/dynamicrouter.js"></script>
 </html>
